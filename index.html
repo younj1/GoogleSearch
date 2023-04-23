@@ -5,8 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<head>
+	<title>Google Search Clone</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			display: flex;
+			align-items: center;
+			margin: 20px 20px 0 20px;
+		}
+		.logo {
+			margin-right: 20px;
+		}
+		.logo img {
+			height: 35px;
+			width: 120px;
+		}
+		.search {
+			display: flex;
+			flex-grow: 1;
+			border: 1px solid #dfe1e5;
+			border-radius: 24px;
+			padding: 4px 8px;
+		}
+		.search input[type="text"] {
+			flex-grow: 1;
+			border: none;
+			margin-left: 8px;
+			font-size: 18px;
+			color: #444;
+			background-color: transparent;
+			outline: none;
+		}
+		.search button {
+			border: none;
+			background-color: transparent;
+			margin-right: 8px;
+			cursor: pointer;
+			outline: none;
+		}
+		.search button:hover {
+			text-decoration: underline;
+		}
+		.search-results {
+			background-color: #fff;
+			border: 1px solid #dfe1e5;
+			border-radius: 8px;
+			margin: 20px;
+			padding: 20px;
+		}
+		.search-results h3 {
+			font-size: 18px;
+			margin-top: 0;
+		}
+		.search-results a {
+			color: #1a0dab;
+			text-decoration: none;
+		}
+		.search-results a:hover {
+			text-decoration: underline;
+		}
+	</style>
 </head>
 <body>
-    
+	<div class="header">
+		<div class="logo">
+			<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">
+		</div>
+		<div class="search">
+			<input type="text" value="cats and dogs">
+			<button>Google Search</button>
+			<button>I'm Feeling Lucky</button>
+		</div>
+	</div>
+	<div class="search-results">
+		<h3>Search Results for "cats and dogs"</h3>
+		<a href="#">Cat and Dog Pictures</a>
+		<a href="#">Top 10 Cat and Dog Breeds</a>
+		<a href="#">How to Train Your Cat and Dog</a>
+		<a href="#">Cats and Dogs Living Together</a>
+		<a href="#">Funny Cat and Dog Videos</a>
+	</div>
 </body>
 </html>
